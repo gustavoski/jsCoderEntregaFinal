@@ -6,10 +6,8 @@ class Carrito {
     if (e.target.classList.contains("agregar-carrito")) {
       const producto = e.target.parentElement.parentElement;
       this.leerDatosProducto(producto);
-      
     }
   }
-
 
   //leer los datos de los productos en los cards
   leerDatosProducto(producto) {
@@ -38,8 +36,8 @@ class Carrito {
       });
     } else {
       this.insertarCarrito(infoProducto);
-      setTimeout(this.mostrarTooltip, 100) 
-      setTimeout(this.esconderTooltip, 1500 ) 
+      setTimeout(this.mostrarTooltip, 100);
+      setTimeout(this.esconderTooltip, 1500);
     }
   }
 
@@ -53,10 +51,9 @@ class Carrito {
     <a href="#" class="borrar-producto bi bi-cart-x text-danger" data-id="${producto.id}"></a>
     </td>
     </tr>`;
-    
+
     $("#listado-pedidos").append(row);
 
-    
     this.guardarProductosLogalStorage(producto);
   }
 
@@ -69,7 +66,6 @@ class Carrito {
       e.target.parentElement.parentElement.remove();
       producto = e.target.parentElement.parentElement;
       productoID = producto.querySelector("a").getAttribute("data-id");
-                  
     }
     this.eliminarProductoLocalStorage(productoID);
   }
@@ -121,7 +117,7 @@ class Carrito {
     let productosLS;
     productosLS = this.obtenerProductosLocalStorage();
     productosLS.forEach(function (producto) {
-    let row = `<tr>
+      let row = `<tr>
     <td> <img src="${producto.imagen}" width=75> </td>
     <td> ${producto.titulo} </td>
     <td class="fs-6"> ${producto.precio}</td>          
@@ -129,8 +125,8 @@ class Carrito {
     <a href="#" class="borrar-producto bi bi-cart-x text-danger" data-id="${producto.id}"></a>
     </td>
     </tr>`;
-    
-   $("#listado-pedidos").append(row);
+
+      $("#listado-pedidos").append(row);
     });
   }
 
@@ -156,15 +152,11 @@ class Carrito {
     }
   }
 
-
-
   //confirmar los productos cargados
-  mostrarTooltip()
-  {
-       $("#confirmacion").slideDown("slow"); 
+  mostrarTooltip() {
+    $("#confirmacion").slideDown("slow");
   }
-  esconderTooltip()
-  {
-   $("#confirmacion").slideUp("slow");
+  esconderTooltip() {
+    $("#confirmacion").slideUp("slow");
   }
 }
