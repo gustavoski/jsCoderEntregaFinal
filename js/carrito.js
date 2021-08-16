@@ -45,16 +45,6 @@ class Carrito {
 
   //insertar los productos al carrito y en el local storage
   insertarCarrito(producto) {
-    //const row = document.createElement("tr");
-    //row.innerHTML = `
-    //      <td> <img src="${producto.imagen}" width=75> </td>
-    //      <td> ${producto.titulo} </td>
-    //      <td class="fs-6"> ${producto.precio}</td>          
-    //      <td>
-    //      <a href="#" class="borrar-producto bi bi-cart-x text-danger" data-id="${producto.id}"></a>
-    //      </td>
-    //      `;
-//listaProductos.appendChild(row);
     let row = `<tr>
     <td> <img src="${producto.imagen}" width=75> </td>
     <td> ${producto.titulo} </td>
@@ -64,7 +54,6 @@ class Carrito {
     </td>
     </tr>`;
     
-
     $("#listado-pedidos").append(row);
 
     
