@@ -1,0 +1,100 @@
+[
+    {
+        "id": "1",
+        "categoria": "patin",
+        "imagen": "./img/patines-1.png",
+        "titulo": "Patines - Indeme",
+        "precio": 3000
+    },
+
+    {
+        "id": "2",
+        "categoria": "patin",
+        "imagen": "./img/patines-2.png",
+        "titulo": "Patines - Eco",
+        "precio": 1000
+    },
+
+    {
+        "id": "3",
+        "categoria": "patin",
+        "imagen": "./img/patines-3.png",
+        "titulo": "Patines - Fila",
+        "precio": 5000
+    },
+
+    {
+        "id": "4",
+        "categoria": "patin",
+        "imagen": "./img/patines-4.png",
+        "titulo": "Patines - Eco 2",
+        "precio": 1500
+    },
+
+    {
+        "id": "5",
+        "categoria": "palo",
+        "imagen": "./img/palo-1.png",
+        "titulo": "Palo - Reus",
+        "precio": 5000
+    },
+
+    {
+        "id": "6",
+        "categoria": "palo",
+        "imagen": "./img/palo-2.png",
+        "titulo": "Palo - Laroche",
+        "precio": 4000
+    },
+
+    {
+        "id": "7",
+        "categoria": "palo",
+        "imagen": "./img/palo-3.png",
+        "titulo": "Palo - Pisani Shooter",
+        "precio": 2000
+    },
+
+    {
+        "id": "8",
+        "categoria": "palo",
+        "imagen": "./img/palo-4.png",
+        "titulo": "Palo - Pisani Supra",
+        "precio": 2500
+    },
+
+    {
+        "id": "9",
+        "categoria": "guante",
+        "imagen": "./img/guante-1.png",
+        "titulo": "Guantes - Reno Portugal",
+        "precio": 3000
+    },
+
+    {
+        "id": "10",
+        "categoria": "guante",
+        "imagen": "./img/guante-2.png",
+        "titulo": "Guantes - Reno Suiza",
+        "precio": 3000
+    },
+
+    {
+        "id": "11",
+        "categoria": "guante",
+        "imagen": "./img/guante-3.png",
+        "titulo": "Guantes - Reno España",
+        "precio": 3000
+    },
+
+    {
+        "id": "12",
+        "categoria": "guante",
+        "imagen": "./img/guante-4.png",
+        "titulo": "Guantes - Eco",
+        "precio": 1500
+    }
+
+
+
+]
