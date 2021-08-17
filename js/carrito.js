@@ -130,6 +130,34 @@ class Carrito {
     });
   }
 
+
+
+  //cargar productos en pedidos.html desde el local storage
+  leerLocalStoragePedido(){
+    let productosLS;
+    productosLS = this.obtenerProductosLocalStorage();
+    productosLS.forEach(function (producto) {
+      const row = document.createElement('tr');
+
+    row.innerHTML = `
+    <td> <img src="${producto.imagen}" width=75> </td>
+      <td> ${producto.titulo} </td>
+      <td class="fs-6">$ <span>${producto.precio}</span></td>          
+      <td>
+     <a href="#" class="borrar-producto bi bi-cart-x text-danger" data-id="${producto.id}"></a>
+      </td>
+    
+    `
+      listaCompra.appendChild(row);
+
+
+      })
+
+  }
+
+
+
+
   //vaciar carrito en el localStorage
   vaciarLocalStorage() {
     localStorage.clear();
