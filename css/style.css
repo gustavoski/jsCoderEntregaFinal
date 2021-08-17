@@ -25,7 +25,7 @@
 
 }
 
-/*Desafio 13*/
+
 /*seteo de mensaje de confirmación de compra*/ 
 #confirmacion
     {
@@ -35,3 +35,9 @@
         height: 50px;
         text-align: center;
     }
+
+/*agrandar icono carrito x en página pedidos*/
+.ico-grande{
+    font-size: 25px;
+
+}
