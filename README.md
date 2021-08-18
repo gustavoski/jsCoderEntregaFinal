@@ -1,1 +1,2 @@
-Tercer Entrega
+Entrega Final JavaScript
+Alumno: Gustavo Skidelsky
