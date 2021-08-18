@@ -1,5 +1,5 @@
 const compra = new Carrito();
-const listaCompra = document.querySelector("#lista-compra tbody");
+
 
 cargarEventos();
 
@@ -8,4 +8,7 @@ function cargarEventos() {
     "DOMContentLoaded",
     compra.leerLocalStoragePedido()
   );
+  $('#carrito').on('click', (e) =>{compra.eliminarProducto(e)}); 
+    compra.calcularTotal();
+
 }
