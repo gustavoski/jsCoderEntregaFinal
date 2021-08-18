@@ -144,8 +144,8 @@ class Carrito {
       <a href="#" class="borrar-producto bi bi-cart-x text-danger ico-grande" data-id="${producto.id}"></a>
       </td>
       </tr>`;
-  
-        $("#listado-compras").append(row);
+
+      $("#listado-compras").append(row);
     });
   }
 
@@ -179,27 +179,23 @@ class Carrito {
     $("#confirmacion").slideUp("slow");
   }
 
-
-  calcularTotal(){
+  //Calcula el total en la pedidos.html
+  calcularTotal() {
     let productoLS;
     let total = 0;
-    
+
     productoLS = this.obtenerProductosLocalStorage();
-    
-    for(let i = 0; i<productoLS.length; i++){
+
+    for (let i = 0; i < productoLS.length; i++) {
       let elemento = Number(productoLS[i].precio);
-        total = total + elemento;
+      total = total + elemento;
     }
 
-    if ($('#total')===""){
-      $('#total').append("$ " + total);
-
-    }else{
-      $('#total').empty();
-      $('#total').append("$ " + total);
-    } 
+    if ($("#total") === "") {
+      $("#total").append("$ " + total);
+    } else {
+      $("#total").empty();
+      $("#total").append("$ " + total);
+    }
   }
-
-
-
 }
